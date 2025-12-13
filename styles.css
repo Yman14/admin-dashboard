@@ -21,6 +21,35 @@ body {
     grid-area: 1 / 1 / 3 / 2;
 }
 
+.sidebar nav ul {
+    margin: 0;
+    padding: 0;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: 60px repeat(9, 40px);
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar nav ul li {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.sidebar-icon {
+    width: 70%;
+    height: 70%;
+    background-color: gray;
+    border: 2px solid white;    
+    justify-self: center;
+}
+
+.nav-link {
+    border: 2px solid yellow;
+    color: white;
+}
+
 .header {
     background-color: yellow;
     grid-area: 1 / 2 / 2 / 3;
