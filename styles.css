@@ -5,13 +5,12 @@
 body {
     margin: 0;
     padding: 0;
-    border: 2px solid black;
+    font-family: Roboto;
 }
 
 .container {
     width: 100%;
     min-height: 100vh;
-    border: 2px solid red;
     display: grid;
     grid-template: 25% 1fr / 18% 1fr;
 }
@@ -24,9 +23,8 @@ body {
 .sidebar nav ul {
     margin: 0;
     padding: 0;
-    border: 2px solid black;
     display: grid;
-    grid-template-rows: 60px repeat(9, 40px);
+    grid-template-rows: 80px repeat(10, 40px);
     list-style-type: none;
     padding: 10px;
 }
@@ -37,21 +35,40 @@ body {
     align-items: center;
 }
 
+.sidebar nav ul li:first-of-type {
+    align-items: center;
+    margin-bottom: 10px;
+
+    .sidebar-icon:first-of-type {
+        width: 50%;
+        height: 50%;
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
+}
+
 .sidebar-icon {
-    width: 70%;
-    height: 70%;
+    width: 25%;
+    height: 40%;
     background-color: gray;
     border: 2px solid white;    
     justify-self: center;
 }
 
 .nav-link {
-    border: 2px solid yellow;
-    color: white;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .header {
-    background-color: yellow;
+    background-color: white;
     grid-area: 1 / 2 / 2 / 3;
 }
 
