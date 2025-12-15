@@ -71,6 +71,24 @@ body {
 .header {
     background-color: white;
     grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template: 1fr 2fr / 2fr 1fr
+}
+
+form {
+    border: 2px solid red;
+}
+
+.profile {
+    border: 2px solid blue;
+}
+
+.user-info {
+    border: 2px solid green;
+}
+
+.header-buttons {
+    border: 2px solid red;
 }
 
 .main-content {
