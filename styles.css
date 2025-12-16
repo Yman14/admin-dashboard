@@ -75,11 +75,11 @@ body {
     grid-template: 40% 60% / 60% 40%
 }
 
-form {
+.header form {
     border: 2px solid red;
 }
 
-.profile {
+.header .profile {
     display: grid;
     grid-template-columns: 1fr 1fr 5fr;
     align-items: center;
@@ -112,7 +112,7 @@ form {
     align-items: center;
 }
 
-.user-info {
+.header .user-info {
     display: grid;
     grid-template-columns: 1fr 5fr;
     align-items: center;
@@ -144,7 +144,7 @@ form {
     font-size: 1.3rem;
 }
 
-.header-buttons {
+.header .header-buttons {
     border: 2px solid red;
 }
 
