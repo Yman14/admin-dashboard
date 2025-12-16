@@ -145,7 +145,21 @@ body {
 }
 
 .header .header-buttons {
-    border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(3, 100px) 1fr;
+    align-items: center;
+}
+
+.header-buttons button {
+    background-color: #24a0ed;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    font-weight: 700;
+    
 }
 
 .main-content {
