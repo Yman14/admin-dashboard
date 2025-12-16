@@ -12,7 +12,7 @@ body {
     width: 100%;
     min-height: 100vh;
     display: grid;
-    grid-template: 25% 1fr / 18% 1fr;
+    grid-template: 18% 1fr / 18% 1fr;
 }
 
 .sidebar {
@@ -259,5 +259,56 @@ body {
 }
 
 .main-content .trending {
-    border: 2px solid green;
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+}
+
+.trending .trending-cards {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: max(300px, 80%);
+    height: 100%;
+    overflow-y: auto;
+    display: grid;
+    grid-auto-rows: 60px;
+}
+
+.trending-cards .trending-card {
+    width: 100%;
+    height: 100%;
+    padding: 0 6%;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.trending-card .profile-picture {
+    border: 2px solid black;
+    background-color: gray;
+    width: 30px;
+    height: 30px;
+    border-radius: 45%;
+}
+
+.trending-card .name-holder {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 3px; 
+}
+
+.name-holder .username {
+    font-size: .9rem;
+    font-weight: 900;
+    align-self: end;
+}
+
+.name-holder .project-title {
+    font-size: .8rem;
+    font-weight: 500;
+    color: gray;
 }
