@@ -61,8 +61,6 @@ body {
 .sidebar-icon {
     width: 20px;
     height: 20px;
-    background-color: gray;
-    border: 2px solid white;
     justify-self: center;
 }
 
@@ -87,14 +85,6 @@ body {
     align-items: center;
     column-gap: 10px;
     padding-left: 4%;
-}
-
-.searchbar-label {
-    border: 2px solid black;
-    background-color: gray;
-    color: white;
-    width: 20px;
-    height: 20px;
 }
 
 form #searchbar {
