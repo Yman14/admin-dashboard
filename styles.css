@@ -196,7 +196,7 @@ form #searchbar {
     background-color: var(--main-bgc);
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
-    grid-template: 60% 35% 1fr / 70% 30%;
+    grid-template: 50% 45% 1fr / 70% 30%;
 }
 
 .main-content .projects {
@@ -261,18 +261,19 @@ form #searchbar {
     border: none;
     border-radius: 10px;
     width: max(300px, 80%);
-    height: 100%;
+    height: min-content;
+    padding-bottom: 20px;
     overflow-y: auto;
     display: grid;
+    justify-items: center;
     grid-auto-rows: min-content;
 }
 
 .announcement-cards .announcement-card {
     border: none;
-    border-bottom: 1px solid lightgray;
-    width: 100%;
+    border-top: 1px solid lightgray;
+    width: 90%;
     height: 100%;
-    padding: 0 6%;
 }
 
 .announcement-card .announcement-title {
@@ -284,8 +285,8 @@ form #searchbar {
 .announcement-card .announcement-content {
     margin: 0;
     padding: 0;
-    padding: 10px 0;
-    font-size: .8rem;
+    padding: 5px 0;
+    font-size: .7rem;
 }
 
 .main-content .trending {
