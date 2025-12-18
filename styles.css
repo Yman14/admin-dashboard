@@ -23,7 +23,7 @@ body {
     object-fit: cover;
 }
 
-.header-buttons button:hover, .notification-button:hover,  {
+.header-buttons button:hover, .notification-button:hover  {
         cursor: pointer;
         transform: scale(1.1);
     }
