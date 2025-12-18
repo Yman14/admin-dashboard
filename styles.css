@@ -294,6 +294,9 @@ form #searchbar {
     width: 90%;
     height: 100%;
 }
+.announcement-card:first-of-type {
+    border-top: none;
+}
 
 .announcement-card .announcement-title {
     margin: 0;
