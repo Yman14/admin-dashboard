@@ -23,7 +23,7 @@ body {
     object-fit: cover;
 }
 
-.header-buttons button:hover, .notification-button:hover {
+.header-buttons button:hover, .notification-button:hover,  {
         cursor: pointer;
         transform: scale(1.1);
     }
@@ -257,6 +257,11 @@ form #searchbar {
 .project-card .icons>div {
     width: 20px;
     height: 20px;
+}
+
+
+.project-card .icons>div:hover {
+    cursor: pointer;
 }
 
 .project-card .icons::before {
