@@ -15,6 +15,11 @@ body {
     object-fit: cover;
 }
 
+.header-buttons button:hover, .notification-button:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
 .container {
     width: 100%;
     min-height: 100vh;
@@ -109,10 +114,6 @@ form #searchbar {
     height: 20px;
 }
 
-.notification-button:hover {
-        cursor: pointer;
-        transform: scale(1.1);
-    }
 
 .profile .profile-picture {
     border: 2px solid black;
