@@ -104,12 +104,15 @@ form #searchbar {
     justify-items: center;
 }
 
-.profile .bell-button {
-    border: 2px solid black;
-    background-color: gray;
+.profile .notification-button {
     width: 20px;
     height: 20px;
 }
+
+.notification-button:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
 
 .profile .profile-picture {
     border: 2px solid black;
